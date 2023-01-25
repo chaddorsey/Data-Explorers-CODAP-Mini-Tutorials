@@ -284,7 +284,7 @@ class TutorialView extends React.Component {
       let tHandled = false,
 
 
-// TODO: Tweak to handling to force horizontal axis for second attribute (i.e. reject two-attribute scatterplots)
+// TODO: Tweak to handling to force horizontal axis for second attribute (i.e. reject two-attribute scatterplots)…
 
           handleAttributeChange = function () {
             console.log('iNotification.values',iNotification.values);
