@@ -1,7 +1,7 @@
 {
 
   "homepage": "http://chaddorsey.github.io/Data-Explorers-CODAP-Mini-Tutorials",
-  
+
   "devDependencies": {
     "babel-preset-react": "^6.22.0",
     "babelify": "^7.3.0",
@@ -15,7 +15,7 @@
     "build-onboarding-pre": "mkdir target",
     "build": "bin/build",
     "clean": "rm -rf target",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy" : "npm run /bin/build",
+    "deploy" : "gh-pages -d /bin/build"
   }
 }
