@@ -283,60 +283,8 @@ class TutorialView extends React.Component {
 
       let tHandled = false,
 
-      /*
-                handleAttributeChange = function () {
-                  // If there is a graph with two or more attributes then 'SecondAttribute' else 'AssignAttribute'
-                  // Note that dropping a legend attribute doesn't trigger this notification!
-                  codapInterface.sendRequest({
-                    action: 'get',
-                    resource: 'componentList'
-                  }).then(function (iResult) {
-                    if (iResult.success && iResult.values.length > 1) {
-                      let tGraphRequestList = [];
-                      iResult.values.forEach(function (iComponent) {
-                        if (iComponent.type === 'graph') {
-                          tGraphRequestList.push({
-                            action: 'get',
-                            resource: 'component[' + iComponent.id + ']'
-                          })
-                        }
-                      });
-                      if (tGraphRequestList.length > 0) {
-                        codapInterface.sendRequest(tGraphRequestList).then(function (iResults) {
-                          let maxAttrsFound = 0;
-                          iResults.forEach(function (iResult) {
-                            let numAttrsFound = 0;
-                            ['xAttributeName', 'yAttributeName', 'y2AttributeName', 'legendAttributeName'].forEach(
-                                function (iKey) {
-                                  if (iResult.values[iKey])
-                                    numAttrsFound++;
-                                }
-                            );
-                            maxAttrsFound = Math.max(maxAttrsFound, numAttrsFound);
-                          });
-                          switch (maxAttrsFound) {
-                            case 1:
-                              if (taskDescriptions.taskExists('AssignAttribute'))
-                                this.handleAccomplishment('AssignAttribute');
-                              if(taskDescriptions.taskExists('SwapAttribute'))
-                                this.handleAccomplishment('SwapAttribute')
-                              break;
-                            case 2:
-                              if (taskDescriptions.taskExists('MakeScatterplot'))
-                                this.handleAccomplishment('MakeScatterplot');
-                              // fallthrough deliberate
-                            case 3:
-                              this.handleAccomplishment('SecondAttribute');
-                              break;
-                          }
-                        }.bind(this))
-                      }
-                    }
-                  }.bind(this))
-                }.bind(this),
-      */
 
-      // TODO: Tweak to handling to force horizontal axis for second attribute (i.e. reject two-attribute scatterplots)
+      // TODO: Tweak to handling to force horizontal axis for second attribute (i.e. reject two-attribute scatterplots)…
 
       handleAttributeChange = function () {
         console.log('iNotification.values', iNotification.values);

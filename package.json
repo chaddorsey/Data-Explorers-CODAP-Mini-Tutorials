@@ -1,5 +1,14 @@
 {
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "onboarding-new-1",
+    "onboarding-new-2",
+    "onboarding-new-3",
+    "onboarding-new-4"
+  ],
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "lerna": "^6.4.1"
   }
 }
